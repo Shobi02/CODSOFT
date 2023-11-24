@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: #f2bed1;
+}  
+html {
+    scroll-behavior: smooth;
+  }
+@font-face {
+    font-family: agatha;
+    src: url(agatha.ttf);
+}
+
+.logo .glow {
+    
+    color:rgb(251, 245, 247);
+    font-size: 50px;
+    text-align: center;
+    font-family: agatha;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+    from{
+        text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 30px #90047d;
+    }
+    to{
+        text-shadow: 0 0 20px #fff,0 0 30px #90047d;
+    }
+}
+.image{
+    text-align:center;
+    height:100%;
+}
+
+.navbar {
+    position: sticky;
+    /* position:fixed; */
+    /* display:flex; */
+    width: 100%;
+    /* z-index: 999; */
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease;
+    /* background:url("https://gray-kvvu-prod.cdn.arcpublishing.com/resizer/ED_5cTPdRgB6umpwHuBh1zG1y7I=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/XDGSGIKVWFGINOC5ZQTVR4XU5A.jpg") no-repeat; */
+    /* height: 100%; */
+    /* background-position: center; */
+    /* text-align: center; */
+    
+  }
+.navbar .menu li {
+    list-style: none;
+    display:inline-block;
+    float:center;
+    padding:10px;
+  }
+  
+  .navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-right:25px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .menu li a:hover {
+    color: rgb(166, 132, 163);
+  }
+  .about {
+    padding: 50px;
+    background:#f6dfeb;
+    width: 100%;
+    height:100%;
+    text-align: center;
+  }
+  .about .title{
+    padding: 30px;
+    font-family: agatha;
+    color:#fff;
+    font-size: 50px;
+    font-style:initial;
+  }
+  .columnleft img{
+    height:500px;
+    width:700px;
+
+  }
+  .columnleft .text{
+    padding:10px;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 300;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+  }
+  .columnleft .text p{
+    padding:20px;
+    font-size: 20px;
+    font-family:monospace;
+  }
+  /* Menu */
+
+.menu .title{
+    text-align:center;
+    padding: 30px;
+    font-family: agatha;
+    color:#fff;
+    font-size: 50px;
+    font-style:initial;
+
+}
+.menu{
+    padding: 50px;
+    background:#f6dfeb;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    
+}
+.menu .columnleft{
+    text-align: center;
+    margin:20px;
+
+}
+.menu .columnleft img{
+    height: 500px;
+    width:700px;
+    border-radius: 30px;
+}
+
+.menu .columnleft  p{
+  color: #fff;
+  padding:20px;
+  font-family:monospace;
+  font-size: 30px;
+  font-weight: 300;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.menu h2{
+  font-size: 60px;
+  padding: 20px;
+  color:#fff;
+  font-family: agatha;
+}
+
+.contact {
+  background:#f6dfeb;
+  color: #fff;
+  font-family: agatha;
+  font-size: 50px;
+
+}
+
+.contact .title::after {
+  content: "—Get in Touch—";
+}
+
+.contact .contact-content .column {
+  width: 100%;
+  text-align: center;
+}
+
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: #94A684;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 500;
+  color: #000;
+}
+
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+
+.contact .right form .fields {
+  display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .column .right{
+  text-align: center;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .right form .button-area {
+  display: flex;
+  align-items: center;
+}
+
+.right form .button-area button {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: #f2bed1;
+  border: 2px solid #f2bed1;
+  transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover {
+  color: #1e3551;
+  background: none;
+  animation: pulsate 1s ease-in-out;
+}
